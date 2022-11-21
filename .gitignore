@@ -1,3 +1,7 @@
+# model / image
+hat_cc_0.pth
+sample_sr.png
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
