@@ -2,7 +2,7 @@
 HAT (Super Resolution) made of CC-0
 
 # Getting Started
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://gist.github.com/alfredplpl/4b9134d9bdc8c2da8470a1442922bb54/hat-cc-0.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/gist/alfredplpl/4b9134d9bdc8c2da8470a1442922bb54/hat-cc-0.ipynb)
 
 You must install the libraries by the following code.
 
