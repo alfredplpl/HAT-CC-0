@@ -8,10 +8,16 @@ You must install the libraries by the following code.
 pip install -r requirements.txt
 ```
 
-You can use this model by the following code.
+You can use this model by the following code to resize sample.jpg .
 
 ```shell
 python main.py cpu sample.jpg sample_sr.png
+```
+
+I recommend use a GPU to resize your image.
+
+```shell
+python main.py cuda sample.jpg sample_sr.png
 ```
 
 # Citation

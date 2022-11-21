@@ -1,8 +1,12 @@
+import os.path
+
 import torch
 from PIL import Image
 from torchvision import transforms
 from hat import HAT
 import argparse
+import os
+import requests
 
 parser = argparse.ArgumentParser(description='Super resolution.')
 parser.add_argument('device', type=str,
@@ -15,6 +19,11 @@ args = parser.parse_args()
 
 
 load_path="hat_cc_0.pth"
+if(not os.path.exists(load_path)):
+    print("Not found the hat model. The download start.")
+    res=requests.get("https://storage.googleapis.com/distributed-models/hat_cc_0.pth")
+    with open(load_path,"wb") as f:
+        f.write(res.content)
 
 net = HAT(
     upscale=4,
